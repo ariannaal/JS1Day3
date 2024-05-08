@@ -187,7 +187,8 @@ for (let index = 0; index < starWarsCharacters.length; index++) {
 let crewMass = 0;
 let index = 0;
 while (index < starWarsCharacters.length) {
-  crewMass += starWarsCharacters[index].mass; 
+  crewMass += starWarsCharacters[index].mass;
+  index++
 }
 console.log("Massa totale dell'equipaggio:", crewMass)
 
@@ -204,16 +205,31 @@ console.log("Massa totale dell'equipaggio:", crewMass)
   Una volta fatto, modifica la massa di qualche elemento dell'equipaggio e vedi se riesci ad ottenere un messaggio diverso.
 */
 
-const carico = 1500
-if (carico < 500) {
+
+const astronave = 1500
+if (astronave < 500) {
   console.log("Ship is underloaded")
-} if (carico > 500 && carico < 700) {
+} if (astronave > 500 && astronave < 700) {
   console.log("Ship is half loaded")
 }
 
 /* ESERCIZIO 8
   Usa un for loop per cambiare il valore della proprietà "gender" di alcuni personaggi dal valore "n/a" a "robot" (Tip: puoi effettuare la riassegnazione del valore corrispondente o creare un nuovo array)
 */
+
+
+for (let index = 0; index < starWarsCharacters[index].gender.length; index++) {
+  console.log(starWarsCharacters[index].gender)
+  if (starWarsCharacters[index].gender === 'n/a') {
+    starWarsCharacters[index].gender ="robot"
+  }
+}
+console.log(starWarsCharacters)
+
+
+ 
+
+
 
 /* --EXTRA-- ESERCIZIO 9
   Utilizzando gli elementi presenti nell'array "femaleCharacters" rimuovi dall'array "charactersNames" le stringhe corrispondenti a personaggi con lo stesso nome.
